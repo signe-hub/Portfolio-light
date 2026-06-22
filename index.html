@@ -70,34 +70,6 @@
     }
 
     /* ─── LOADING SCREEN ─────────────────────────────────────── */
-    #loader {
-      position: fixed;
-      inset: 0;
-      background: var(--white);
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      z-index: 99998;
-      gap: 20px;
-    }
-    #loader .loader-monogram {
-      font-family: 'Cormorant Garamond', serif;
-      font-weight: 300;
-      font-size: 100px;
-      color: var(--ink);
-      opacity: 0;
-      animation: loaderFadeIn 0.4s var(--ease) 0.3s forwards;
-      letter-spacing: -0.02em;
-    }
-    #loader .loader-line {
-      width: 0;
-      height: 1px;
-      background: var(--gold);
-      animation: loaderLine 0.5s var(--ease) 0.6s forwards;
-    }
-    @keyframes loaderFadeIn { to { opacity: 1; } }
-    @keyframes loaderLine { to { width: 60px; } }
 
     /* ─── SCROLL REVEAL ──────────────────────────────────────── */
     .reveal, .b-card, .ai-card {
@@ -894,7 +866,7 @@
       gap: 20px;
       box-shadow: 0 4px 32px rgba(26,23,20,0.12), inset 0 1px 0 rgba(255,255,255,0.8);
       opacity: 0;
-      animation: fadeUpNav 0.6s var(--ease) 1.2s forwards;
+      animation: fadeUpNav 0.6s var(--ease) 0.3s forwards;
     }
     .pill-name {
       font-family: 'Cormorant Garamond', serif;
@@ -944,12 +916,6 @@
 
 <!-- CURSOR -->
 <div id="cursor"></div>
-
-<!-- LOADING SCREEN -->
-<div id="loader">
-  <div class="loader-monogram">SP</div>
-  <div class="loader-line"></div>
-</div>
 
 <!-- NAV -->
 <nav id="nav">
@@ -1524,16 +1490,6 @@
 
 <!-- JAVASCRIPT -->
 <script>
-  /* ── LOADING SCREEN ─────────────────────────────────────── */
-  window.addEventListener('load', () => {
-    setTimeout(() => {
-      const loader = document.getElementById('loader');
-      loader.style.transition = 'opacity 0.5s';
-      loader.style.opacity = '0';
-      setTimeout(() => { loader.style.display = 'none'; }, 500);
-    }, 1200);
-  });
-
   /* ── CUSTOM CURSOR ──────────────────────────────────────── */
   const cur = document.getElementById('cursor');
   document.addEventListener('mousemove', e => {
