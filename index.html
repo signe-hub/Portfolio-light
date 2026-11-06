@@ -3,8 +3,16 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Signe Putna · Digital Solution Architect</title>
-  <meta name="description" content="Digital solution architect and AI systems operator. Five years designing and managing multi-brand digital ecosystems for complex international organisations, now based in Porto." />
+  <title>Signe Putna | AI Search, GEO &amp; Marketing Automation</title>
+  <meta name="description" content="Signe Putna: digital strategy, AI search / GEO and marketing automation. Multi-brand luxury experience and hands-on AI workflows. Based in Porto, working internationally." />
+  <link rel="canonical" href="https://signe-hub.github.io/Portfolio-light/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Signe Putna | AI Search &amp; Marketing Automation" />
+  <meta property="og:description" content="Brand strategy, AI-assisted content and marketing workflows. Explore Signe Putna's work and download her consulting CVs." />
+  <meta property="og:url" content="https://signe-hub.github.io/Portfolio-light/" />
+  <meta property="og:image" content="https://signe-hub.github.io/Portfolio-light/images/pulina-china.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="theme-color" content="#F5F0E8" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=DM+Sans:opsz,wght@9..40,300;9..40,400;9..40,500&display=swap" rel="stylesheet" />
@@ -1074,6 +1082,59 @@
       .photo-strip { padding: 0 32px; }
       footer { padding: 32px 24px; flex-direction: column; gap: 12px; text-align: center; }
     }
+
+    /* Consulting downloads and accessibility */
+    #nav { background: rgba(253,250,245,.96); border-bottom: 1px solid var(--rule); }
+    body { cursor: auto; }
+    #cursor { display: none; }
+    :focus-visible { outline: 3px solid var(--gold); outline-offset: 5px; }
+    section { scroll-margin-top: 84px; }
+    #consulting { padding: 96px 72px; background: var(--parchment-2); }
+    .consulting-intro { max-width: 660px; font-size: 15px; line-height: 1.8; margin-top: 24px; color: #665C53; }
+    .consulting-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; margin-top: 44px; }
+    .consulting-card { padding: 38px; border: 1px solid var(--rule); background: var(--white); display: flex; flex-direction: column; }
+    .consulting-card h3 { font-family: 'Cormorant Garamond', serif; font-size: clamp(30px, 3vw, 43px); font-weight: 400; line-height: 1.1; margin-bottom: 24px; }
+    .consulting-card h3 em { color: #87652E; font-weight: 400; }
+    .consulting-card p { color: #665C53; line-height: 1.8; font-size: 14px; margin-bottom: 24px; }
+    .consulting-card .tag-cloud { margin-bottom: 28px; }
+    .download-link { margin-top: auto; padding-top: 20px; border-top: 1px solid var(--rule); color: var(--ink); font-size: 13px; font-weight: 500; text-decoration: none; line-height: 1.6; }
+    .download-link span { display: block; color: #665C53; font-size: 11px; font-weight: 400; margin-top: 5px; }
+    .download-link:hover { color: #87652E; }
+    .hero-right img { position: absolute; inset: 0; }
+    .ai-sub, .ai-body { color: rgba(245,240,232,.76); }
+    .philo-line { color: #7A7068; }
+    #the-person { padding: 100px 72px !important; }
+    .proj-card:focus-visible { outline-offset: -4px; }
+    @media (max-width: 900px) {
+      .nav-links li { display: none !important; }
+      .nav-links li:nth-last-child(3), .nav-links li:last-child { display: block !important; }
+      #consulting, #the-person { padding: 72px 32px !important; }
+      .consulting-grid { grid-template-columns: 1fr; }
+      .hero-buttons, .cta-buttons { flex-wrap: wrap; }
+      .hero-right { height: 540px; min-height: 0; }
+    }
+    @media (max-width: 540px) {
+      #bottom-pill { display: none; }
+      .projects-grid { grid-template-columns: 1fr; }
+      .hero-eyebrow { letter-spacing: .12em; font-size: 9px; }
+      .hero-h1 { font-size: 50px; }
+      .hero-left { padding-left: 24px; padding-right: 24px; }
+      .hero-right { height: 440px; min-height: 0; }
+      .hero-stats { gap: 16px; left: 24px; right: 24px; }
+      .consulting-card, .b-card, .ai-card { padding: 28px; }
+      .modal-content { padding: 30px 24px; }
+      .cta-links { gap: 22px; }
+      .cta-link { letter-spacing: .05em; }
+      .nav-links li { display: none !important; }
+      .nav-links li:nth-last-child(3), .nav-links li:last-child { display: block !important; }
+      .nav-links { gap: 12px; }
+      .nav-links a { font-size: 9px; letter-spacing: .05em; }
+    }
+    @media (prefers-reduced-motion: reduce) {
+      *, *::before, *::after { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
+      .reveal, .b-card, .ai-card, .philo-line, #bottom-pill { opacity: 1 !important; transform: none !important; }
+      .marquee-track { animation: none !important; }
+    }
   </style>
 </head>
 <body>
@@ -1087,7 +1148,8 @@
   <ul class="nav-links">
     <li><a href="#about">Work</a></li>
     <li><a href="#projects">Projects</a></li>
-    <li><a href="#ai-systems">Systems</a></li>
+    <li><a href="#consulting">Consulting</a></li>
+    <li><a href="#ai-systems">Tools</a></li>
     <li><a href="#contact" class="nav-cta">Contact</a></li>
   </ul>
 </nav>
@@ -1095,27 +1157,26 @@
 <!-- HERO -->
 <section id="hero">
   <div class="hero-left">
-    <div class="hero-eyebrow">Digital Solution Architecture</div>
+    <div class="hero-eyebrow">AI Search · Marketing Operations · Automation</div>
     <h1 class="hero-h1">
-      Digital solutions<br>
-      built, deployed and<br>
-      managed <em>at scale.</em>
+      Brand strategy.<br>
+      AI workflows.<br>
+      <em>Hands-on delivery.</em>
     </h1>
     <p class="hero-sub">
-      Digital solution architect and AI systems operator.
-      Five years designing and managing multi-brand digital
-      ecosystems for elite international groups, now building
-      scalable digital solutions for complex organisations
-      from Porto.
+      I help premium brands connect positioning, content and marketing operations.
+      My work combines experience across eight luxury brands with current practice
+      in AI search / GEO, digital strategy and workflow automation. Based in Porto,
+      working internationally.
     </p>
     <div class="hero-buttons">
-      <a href="#about" class="btn-primary">View Work</a>
-      <a href="#contact" class="btn-outline">Let's Connect</a>
+      <a href="#projects" class="btn-primary">Explore My Work</a>
+      <a href="#consulting" class="btn-outline">Consulting &amp; CVs</a>
     </div>
     <div class="hero-scroll">Scroll</div>
   </div>
   <div class="hero-right">
-    <img src="images/signe-hero.jpg" alt="Signe Putna on Tecnomar yacht, Porto harbor" />
+    <img src="images/signe-hero.jpg" alt="Signe Putna aboard a yacht" fetchpriority="high" />
     <div class="hero-img-frame"></div>
     <div class="hero-stats">
       <div>
@@ -1177,39 +1238,61 @@
   </div>
 </div>
 
+
+<section id="consulting">
+  <div class="reveal">
+    <div class="section-label">✦ Consulting Focus</div>
+    <h2 class="section-h2">Strategy and systems.<br><em>Connected in practice.</em></h2>
+    <p class="consulting-intro">Two consulting tracks built on the same foundation: brand understanding, content expertise and hands-on digital delivery.</p>
+  </div>
+  <div class="consulting-grid">
+    <article class="consulting-card reveal">
+      <div class="b-card-eyebrow">01 · AI Search &amp; GEO</div>
+      <h3>Help audiences<br><em>discover your expertise.</em></h3>
+      <p>Brand positioning, audience-led content and SEO systems for AI search. I bring multi-brand content experience and AI-assisted research to how brands structure and communicate their expertise.</p>
+      <div class="tag-cloud"><span class="tag">Content strategy</span><span class="tag">AI discovery</span><span class="tag">SEO systems</span></div>
+      <a class="download-link" href="cv/Signe_Putna_AI_Search_GEO_Consultant_CV.pdf" download>Download AI Search / GEO CV <span>PDF · 2 pages ↓</span></a>
+    </article>
+    <article class="consulting-card reveal">
+      <div class="b-card-eyebrow">02 · Marketing Operations &amp; Automation</div>
+      <h3>Turn the brief into<br><em>a working workflow.</em></h3>
+      <p>AI-assisted content systems, marketing workflows and platform implementation. I connect requirements, tool selection and delivery, with documentation and training to support the people using the system.</p>
+      <div class="tag-cloud"><span class="tag">Claude Code</span><span class="tag">Codex / Hermes</span><span class="tag">Automation</span></div>
+      <a class="download-link" href="cv/Signe_Putna_AI_Marketing_Operations_Automation_CV.pdf" download>Download Marketing Operations CV <span>PDF · 2 pages ↓</span></a>
+    </article>
+  </div>
+</section>
+
 <!-- ABOUT - BENTO GRID -->
 <section id="about">
   <div class="about-header reveal">
     <div class="section-label">✦ The Operator</div>
     <h2 class="section-h2">
-      <em>A digital systems</em><br>
-      architect.
+      Brand experience.<br>
+      <em>Operational depth.</em>
     </h2>
   </div>
   <div class="bento-grid">
 
     <!-- Card 1 - wide manifesto -->
     <div class="b-card wide d1">
-      <div class="b-card-eyebrow">Manifesto</div>
+      <div class="b-card-eyebrow">Professional background</div>
       <p class="b-card-body">
-        Signe spent five years inside The Italian Sea Group,
-        one of the world's leading luxury yacht builder groups,
-        owning the complete digital ecosystem across eight brands
-        simultaneously. That meant designing the architecture,
-        deploying the tooling, coordinating vendors and stakeholders
-        across Europe, monitoring performance, and continuously
-        improving what was breaking.
+        From January 2021 to February 2025, I managed the digital ecosystem
+        for eight brands at The Italian Sea Group, including the corporate brand.
+        My work connected content strategy, creator networks, digital advertising,
+        vendor coordination, budgets and performance reporting.
         <br><br>
-        She now works independently, building AI-enhanced digital
-        solutions for premium clients, and is bringing that
-        operational depth into an enterprise environment.
-        She builds systems that operate.
+        At Pulina Exclusive Interiors, I led marketing and communications from
+        February 2025 to February 2026. Since 2026, I have worked independently
+        on digital strategy and AI-enhanced content and marketing workflows.
+        I bring a practical understanding of audiences, partners and delivery to every engagement.
       </p>
       <div class="tag-cloud">
         <span class="tag">Digital Strategy</span>
         <span class="tag">AI Workflows</span>
         <span class="tag">Content Architecture</span>
-        <span class="tag">Solution Architecture</span>
+        <span class="tag">AI Search / GEO</span>
         <span class="tag">Stakeholder Management</span>
         <span class="tag">Performance Monitoring</span>
         <span class="tag">Cross-functional Delivery</span>
@@ -1224,7 +1307,7 @@
       <p class="b-card-small">
         The Italian Sea Group, Admiral Yachts, Tecnomar Yachts,
         Tecnomar for Lamborghini 63, Perini Navi Yachts,
-        Picchiotti Yachts, NCA Refit, CELI 1920,
+        Picchiotti Yachts, NCA Refit,
         and Village Gourmet Restaurant.
       </p>
     </div>
@@ -1246,7 +1329,7 @@
       <div class="b-card-title">Advertising &amp;<br><em>Marketing</em></div>
       <p class="b-card-small">
         Riga State Technical College<br>
-        Bachelor in Marketing &amp; Communication, 2010
+        Advertising &amp; Marketing, 2010
       </p>
     </div>
 
@@ -1255,9 +1338,9 @@
       <div class="b-card-eyebrow">Tools &amp; Platforms</div>
       <div class="b-card-title">Platform<br><em>Fluency</em></div>
       <p class="b-card-small">
-        Adobe Ps, Pr, Lr · Claude AI · GitHub Pages ·
-        Lovable.dev · Google Analytics · Google AI Studio ·
-        Mentionlytics · WordPress · Notion
+        Claude Code · Codex / Hermes · WordPress · Google Analytics ·
+        Google Search Console · Meta Ads · Lovable · Supabase ·
+        HubSpot · Brevo · GitHub Pages
       </p>
     </div>
 
@@ -1276,20 +1359,19 @@
     <div class="b-card wide d1" style="background: var(--white);">
       <div class="b-card-eyebrow">Origin</div>
       <p class="b-card-body" style="max-width: 100%;">
-        Born in Latvia. Nine years in the UK. Six months in Miami. Six months in Egypt.
-        Seven years in Italy. Porto since May 2026, and she is staying.
+        Born in Latvia, with international experience across the UK, the US, Egypt and Italy.
+        Now based in Porto, Portugal.
         <br><br>
-        Working across that many markets, cultures, and industries builds a practical
-        intelligence: the ability to read a room, understand what a client actually needs,
-        and move without friction across geographies and organisations.
-        She brings that to every engagement.
+        Working across markets and cultures has shaped how I understand a client brief,
+        coordinate partners and adapt communication to different audiences.
+        I bring that perspective to every engagement.
       </p>
       <div class="tag-cloud">
         <span class="tag">Latvia</span>
-        <span class="tag">United Kingdom · 9 yrs</span>
-        <span class="tag">Miami · 6 mo</span>
-        <span class="tag">Egypt · 6 mo</span>
-        <span class="tag">Italy · 7 yrs</span>
+        <span class="tag">United Kingdom</span>
+        <span class="tag">Miami</span>
+        <span class="tag">Egypt</span>
+        <span class="tag">Italy</span>
         <span class="tag">Porto · Now</span>
       </div>
     </div>
@@ -1297,7 +1379,7 @@
     <!-- Languages -->
     <div class="b-card d2" style="background: var(--parchment);">
       <div class="b-card-eyebrow">Languages</div>
-      <div class="b-card-title">Five<br><em>tongues.</em></div>
+      <div class="b-card-title">Working across<br><em>languages.</em></div>
       <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 18px;">
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule);">
           <span style="font-size: 13px; color: var(--ink);">Latvian</span>
@@ -1309,7 +1391,7 @@
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule);">
           <span style="font-size: 13px; color: var(--ink);">Italian</span>
-          <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold);">Fluent</span>
+          <span style="font-size: 10px; letter-spacing: 0.14em; text-transform: uppercase; color: var(--gold);">Professional</span>
         </div>
         <div style="display: flex; justify-content: space-between; align-items: center; padding: 10px 0; border-bottom: 1px solid var(--rule);">
           <span style="font-size: 13px; color: var(--muted);">Russian</span>
@@ -1344,7 +1426,7 @@
 
     <div class="proj-card reveal d1" data-proj="0">
       <div class="proj-card-img-wrap">
-        <img src="images/admiral-armani.jpg" alt="Admiral × Giorgio Armani" class="proj-card-img" style="object-position: center 30%;">
+        <img loading="lazy" decoding="async" src="images/admiral-armani.jpg" alt="Admiral × Giorgio Armani" class="proj-card-img" style="object-position: center 30%;">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
@@ -1360,7 +1442,7 @@
 
     <div class="proj-card reveal d2" data-proj="1">
       <div class="proj-card-img-wrap">
-        <img src="images/lambo.jpg" alt="Tecnomar for Lamborghini 63" class="proj-card-img">
+        <img loading="lazy" decoding="async" src="images/lambo.jpg" alt="Tecnomar for Lamborghini 63" class="proj-card-img">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
@@ -1376,7 +1458,7 @@
 
     <div class="proj-card reveal d3" data-proj="2">
       <div class="proj-card-img-wrap">
-        <img src="images/MYS2023.JPG" alt="Monaco Yacht Show" class="proj-card-img">
+        <img loading="lazy" decoding="async" src="images/MYS2023.JPG" alt="Monaco Yacht Show" class="proj-card-img">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
@@ -1392,12 +1474,12 @@
 
     <div class="proj-card reveal d1" data-proj="3">
       <div class="proj-card-img-wrap">
-        <img src="images/pulina-china.jpg" alt="Sanya Yachting Summit" class="proj-card-img">
+        <img loading="lazy" decoding="async" src="images/pulina-china.jpg" alt="Sanya Yachting Summit" class="proj-card-img">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
         <div class="proj-card-tags">
-          <span class="proj-tag">2023</span>
+          <span class="proj-tag">Pulina</span>
           <span class="proj-tag">Keynote</span>
           <span class="proj-tag">China</span>
         </div>
@@ -1408,7 +1490,7 @@
 
     <div class="proj-card reveal d2" data-proj="4">
       <div class="proj-card-img-wrap">
-        <img src="images/MAMVC.jpeg" alt="MAMVC" class="proj-card-img">
+        <img loading="lazy" decoding="async" src="images/MAMVC.jpeg" alt="MAMVC" class="proj-card-img">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
@@ -1424,7 +1506,7 @@
 
     <div class="proj-card reveal d3" data-proj="5">
       <div class="proj-card-img-wrap">
-        <img src="images/mylovepattern-logo.png" alt="My Love Pattern" class="proj-card-img">
+        <img loading="lazy" decoding="async" src="images/mylovepattern-logo.png" alt="My Love Pattern" class="proj-card-img">
         <div class="proj-card-arrow">→</div>
       </div>
       <div class="proj-card-body">
@@ -1465,16 +1547,14 @@
         <span class="pill">Perini Navi Yachts</span>
         <span class="pill">Picchiotti Yachts</span>
         <span class="pill">NCA Refit</span>
-        <span class="pill">CELI 1920</span>
         <span class="pill">Village Gourmet Restaurant</span>
       </div>
       <p class="case-body">
-        Digital solution lead for The Italian Sea Group's complete
-        multi-brand digital ecosystem. Eight brands, one strategic
-        operational seat. Responsible for solution architecture, tooling
-        deployment, vendor coordination, KPI monitoring, budget ownership
-        and continuous performance optimisation across all channels.
-        Managed end-to-end for four years.
+        As Digital Media Manager, I managed the digital ecosystem for eight
+        luxury brands, including the corporate brand. My responsibilities
+        covered digital strategy, content coordination, external vendors,
+        KPI reporting, marketing technology budgets and digital ad spend
+        optimisation from January 2021 to February 2025.
       </p>
       <div class="feature-box" style="margin-bottom: 10px;">
         <div class="feature-box-label">✦ Iconic Collaboration I</div>
@@ -1502,8 +1582,8 @@
       </div>
       <div class="outcomes-grid">
         <div class="outcome-item">✦ Global luxury visibility</div>
-        <div class="outcome-item">✦ Viral content momentum</div>
-        <div class="outcome-item">✦ Cross-market expansion</div>
+        <div class="outcome-item">✦ Creator coordination</div>
+        <div class="outcome-item">✦ Cross-market storytelling</div>
         <div class="outcome-item">✦ Influencer amplification</div>
       </div>
     </div>
@@ -1527,7 +1607,7 @@
       </p>
       <div class="feature-box" style="margin-bottom: 0;">
         <div class="feature-box-label">✦ Keynote Speaker · Sanya, China</div>
-        <div class="feature-box-title">Yachting Summit · 2025</div>
+        <div class="feature-box-title">Sanya Yachting Summit</div>
         <p class="feature-box-body">
           Represented Pulina Exclusive Interiors at an international
           yachting summit in Sanya, China. Delivered a keynote drawing
@@ -1547,7 +1627,7 @@
     </div>
     <!-- Image -->
     <div class="case-img-wrap">
-      <img src="images/pulina-china.jpg" alt="Pulina Exclusive Interiors" />
+      <img loading="lazy" decoding="async" src="images/pulina-china.jpg" alt="Pulina Exclusive Interiors" />
       <div class="case-img-label">✦ Pisa, Italy</div>
     </div>
   </div>
@@ -1563,38 +1643,38 @@
     <!-- Copy -->
     <div>
       <p class="porto-copy">
-        Based in Porto, Signe now works independently with premium
-        brands looking to build or accelerate their digital presence.
-        She brings the strategic depth of a senior in-house operator
-        with the agility and scope of a global consultant.
+        Based in Porto, I work independently with premium brands
+        on digital strategy, content and marketing workflows.
+        My approach brings together in-house brand experience
+        and the practical delivery of an independent consultant.
         <br><br>
-        Her focus: designing digital solutions that operate reliably,
-        integrating AI workflows that scale without adding headcount,
-        and bringing senior strategic depth to organisations that need
-        systems built properly from the start.
+        My current focus combines AI-assisted content workflows, marketing
+        operations and AI search / GEO consulting. I scope requirements,
+        select tools, implement workflows and support adoption with
+        documentation and client training.
       </p>
       <div class="case-blockquote">
-        <p>"Organisations that invest in getting their systems right from the start
-        spend less time fixing them later."</p>
+        <p>"A useful workflow connects a clear business brief, the right tools
+        and people who can use it every day."</p>
       </div>
     </div>
     <!-- Services -->
     <div class="services-grid">
       <div class="service-item">
-        <div class="service-title">Digital Solution Design</div>
-        <p class="service-body">Architecture, requirements scoping, tool selection and deployment for complex multi-channel environments.</p>
+        <div class="service-title">AI Search / GEO</div>
+        <p class="service-body">Brand positioning, audience questions, content structure and SEO systems to support AI discovery.</p>
       </div>
       <div class="service-item">
         <div class="service-title">AI Workflow Integration</div>
-        <p class="service-body">Automation pipelines, content systems and AI tooling built into live business operations.</p>
+        <p class="service-body">AI-assisted research, content production and publishing workflows, from requirements to implementation.</p>
       </div>
       <div class="service-item">
-        <div class="service-title">Performance Optimisation</div>
-        <p class="service-body">KPI monitoring, audit cycles and iterative improvement across digital platforms and channels.</p>
+        <div class="service-title">Marketing Operations</div>
+        <p class="service-body">Campaign coordination, email marketing, KPI monitoring and reporting across digital channels.</p>
       </div>
       <div class="service-item">
-        <div class="service-title">Stakeholder Coordination</div>
-        <p class="service-body">Cross-functional alignment across vendors, partners and internal teams from brief through to delivery.</p>
+        <div class="service-title">Delivery &amp; Adoption</div>
+        <p class="service-body">Partner coordination, process documentation and client training to support everyday use.</p>
       </div>
     </div>
   </div>
@@ -1604,27 +1684,27 @@
 <section id="photos">
   <div class="photo-header reveal">
     <div class="section-label">✦ In The Field</div>
-    <p class="photo-sub">She was actually there.</p>
+    <p class="photo-sub">Brand activations, collaborations and international events.</p>
   </div>
   <div class="photo-strip" id="photoStrip">
     <div class="photo-item">
-      <img src="images/admiral-armani.jpg" alt="Admiral × Giorgio Armani event" />
+      <img loading="lazy" decoding="async" src="images/admiral-armani.jpg" alt="Admiral × Giorgio Armani event" />
       <div class="photo-caption">Admiral × Giorgio Armani</div>
     </div>
     <div class="photo-item">
-      <img src="images/kensho.jpg" alt="Kensho Mega Yacht" />
+      <img loading="lazy" decoding="async" src="images/kensho.jpg" alt="Kensho Mega Yacht" />
       <div class="photo-caption">Kensho Mega Yacht</div>
     </div>
     <div class="photo-item">
-      <img src="images/signe-hero.jpg" alt="This Is It Motor Catamaran" />
+      <img loading="lazy" decoding="async" src="images/signe-hero.jpg" alt="This Is It Motor Catamaran" />
       <div class="photo-caption">This Is It Motor Catamaran</div>
     </div>
     <div class="photo-item">
-      <img src="images/pulina-china.jpg" alt="Pulina Exclusive Interiors · Conference Speaker, China" />
+      <img loading="lazy" decoding="async" src="images/pulina-china.jpg" alt="Pulina Exclusive Interiors · Conference Speaker, China" />
       <div class="photo-caption">Pulina Exclusive Interiors · China</div>
     </div>
     <div class="photo-item">
-      <img src="images/lambo.jpg" alt="Tecnomar for Lamborghini 63" />
+      <img loading="lazy" decoding="async" src="images/lambo.jpg" alt="Tecnomar for Lamborghini 63" />
       <div class="photo-caption">Tecnomar for Lamborghini 63</div>
     </div>
   </div>
@@ -1633,73 +1713,34 @@
 <!-- AI SYSTEMS -->
 <section id="ai-systems">
   <div class="ai-header reveal">
-    <div class="section-label">✦ Future-Ready</div>
-    <h2 class="section-h2">
-      Digital solutions run better<br>
-      when the right<br>
-      <em>systems are in place.</em>
-    </h2>
-    <p class="ai-sub">
-      The tools below are integrated directly into how Signe
-      designs, builds and manages digital solutions. Each one
-      serves a specific operational function.
-    </p>
+    <div class="section-label">✦ Tools &amp; Practice</div>
+    <h2 class="section-h2">A practical toolkit.<br><em>A business purpose.</em></h2>
+    <p class="ai-sub">The platforms I work with across digital strategy, content, development and marketing operations. Tool selection follows the brief.</p>
   </div>
   <div class="ai-grid">
-    <div class="ai-card d1">
-      <span class="ai-icon">◆</span>
-      <div class="ai-title">Claude</div>
-      <p class="ai-body">Strategic ideation, copywriting systems, brand architecture, workflow automation, and creative direction frameworks.</p>
-    </div>
-    <div class="ai-card d2">
-      <span class="ai-icon">⬡</span>
-      <div class="ai-title">Lovable.dev</div>
-      <p class="ai-body">Vibecoding interactive experiences, AI-product prototyping, digital brand interfaces, rapid frontend execution.</p>
-    </div>
-    <div class="ai-card d3">
-      <span class="ai-icon">⊕</span>
-      <div class="ai-title">GitHub Pages</div>
-      <p class="ai-body">Portfolio systems, brand presentations, scroll-based storytelling, and interactive digital experience architecture.</p>
-    </div>
-    <div class="ai-card d4">
-      <span class="ai-icon">◈</span>
-      <div class="ai-title">Synthesise AI</div>
-      <p class="ai-body">Transforming expertise into structured digital products ready for launch. Knowledge architecture at scale.</p>
-    </div>
-    <div class="ai-card d5">
-      <span class="ai-icon">◎</span>
-      <div class="ai-title">Adobe Suite</div>
-      <p class="ai-body">Photoshop, Premiere, Lightroom: visual identity execution, video editing, and premium content production.</p>
-    </div>
-    <div class="ai-card d6">
-      <span class="ai-icon">✦</span>
-      <div class="ai-title">Meta Ads</div>
-      <p class="ai-body">Paid social strategy for Instagram growth, lead generation, and brand awareness in luxury market segments.</p>
-    </div>
-    <div class="ai-card">
-      <span class="ai-icon">⊞</span>
-      <div class="ai-title">WordPress</div>
-      <p class="ai-body">Site architecture, content management and deployment for client-facing digital presence. Custom configurations for multi-brand environments.</p>
-    </div>
-    <div class="ai-card" style="grid-column: span 3; border-right: none;">
-      <span class="ai-icon">❋</span>
-      <div class="ai-title">Ghostwriteros</div>
-      <p class="ai-body">A full-stack marketing agency in one place. Agents covering every stage of the funnel: copy, ads, email sequences, VSLs, carousels, lead magnets, landing pages, offer builds, and brand voice. One platform, end-to-end execution.</p>
-    </div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Claude AI &amp; Claude Code</h3><p class="ai-body">Research, content systems, prompt engineering and AI-assisted workflow implementation.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Codex / Hermes</h3><p class="ai-body">AI-assisted development, workflow design and implementation within my independent practice.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">WordPress &amp; GitHub Pages</h3><p class="ai-body">Web content, portfolio publishing and client-facing digital presence.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Google Analytics &amp; Search Console</h3><p class="ai-body">Website performance, organic search reporting and analysis to inform content decisions.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Lovable &amp; Supabase</h3><p class="ai-body">Tools within my current digital product and AI workflow practice.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Meta Ads Manager</h3><p class="ai-body">Paid social objectives, audience targeting, campaign monitoring and lead generation.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">HubSpot &amp; Brevo</h3><p class="ai-body">Email marketing and marketing workflow support for independent consulting engagements.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Content &amp; Creative</h3><p class="ai-body">GhostwriterOS, Synthesise.ai, Adobe Photoshop, Premiere, Lightroom, InDesign and Canva.</p></div>
+<div class="ai-card"><span class="ai-icon" aria-hidden="true">✦</span><h3 class="ai-title">Collaboration &amp; Delivery</h3><p class="ai-body">Notion, Google Workspace and Microsoft Office for planning, documentation and partner coordination.</p></div>
   </div>
 </section>
 
 <!-- PHILOSOPHY -->
 <section id="philosophy">
   <div class="reveal">
-    <div class="section-label">✦ How She Thinks</div>
+    <div class="section-label">✦ My Approach</div>
   </div>
   <div class="philo-block">
     <div class="philo-line d1">
       Digital solutions work when they are designed around how <span class="accent">people actually operate.</span>
     </div>
     <div class="philo-line d2">
-      <span class="accent">Systems compound.</span> Good architecture built once runs for years.
+      <span class="accent">Systems compound.</span> Clear processes support consistent delivery.
     </div>
     <div class="philo-line d3">
       The best operators combine <span class="accent">strategic clarity,</span> technical fluency and the discipline to see implementation through.
@@ -1717,13 +1758,13 @@
 <section class="cta-section" id="contact">
   <div class="cta-inner">
     <h2 class="cta-h2 reveal">
-      Building digital solutions<br>
-      that work in <em>the real world.</em>
+      Bring your next brief.<br>
+      <em>Let’s make it work.</em>
     </h2>
     <p class="cta-sub reveal">
-      Based in Porto. Open to digital solution roles within complex
-      international organisations, and selective freelance partnerships
-      with premium clients. Remote. Global.
+      Based in Porto. Available for remote consulting in AI search / GEO,
+      digital strategy, marketing operations and automation.
+      Tell me about your goals, team and scope.
     </p>
     <div class="cta-buttons reveal">
       <a href="mailto:signeputna@gmail.com" class="btn-primary">Get In Touch</a>
@@ -1750,10 +1791,10 @@
 </div>
 
 <!-- PROJECT MODAL -->
-<div id="proj-modal" role="dialog" aria-modal="true">
+<div id="proj-modal" role="dialog" aria-modal="true" aria-labelledby="modal-title" aria-hidden="true" inert>
   <div class="modal-inner">
     <div class="modal-img-wrap">
-      <img id="modal-img" src="" alt="">
+      <img loading="lazy" decoding="async" id="modal-img" src="" alt="">
     </div>
     <div class="modal-content">
       <div id="modal-eyebrow" class="modal-eyebrow"></div>
@@ -1785,7 +1826,7 @@
     document.getElementById('nav').classList.toggle('scrolled', window.scrollY > 50);
   }, { passive: true });
 
-  /* ── INTERSECTION OBSERVER — SCROLL REVEALS ─────────────── */
+  /* ── INTERSECTION OBSERVER .  SCROLL REVEALS ─────────────── */
   const io = new IntersectionObserver(entries => {
     entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('in'); });
   }, { threshold: 0.1 });
@@ -1861,7 +1902,7 @@
       eyebrow: '2022 · The Italian Sea Group',
       title: 'Tecnomar for Lamborghini 63',
       tags: ['Digital Growth', 'Brand Strategy', 'Global'],
-      body: 'Took over the digital presence for global market penetration. Built viral content, drove inbound sales leads, and made the brand iconic across social channels worldwide. Operated a full automation stack for global reach, led event collaborations with Automobili Lamborghini, and worked in close alignment with top management including the CEO.'
+      body: 'Led digital amplification for Tecnomar for Lamborghini 63 as part of The Italian Sea Group. Coordinated content creators, user-generated content, influencer distribution and cross-platform storytelling across automotive, superyacht and luxury lifestyle audiences. Managed execution alongside performance monitoring and internal stakeholder coordination.'
     },
     {
       img: 'images/MYS2023.JPG',
@@ -1872,7 +1913,7 @@
     },
     {
       img: 'images/pulina-china.jpg',
-      eyebrow: '2023 · Sanya, China',
+      eyebrow: 'Pulina Exclusive Interiors · Sanya, China',
       title: 'Sanya Yachting Summit',
       tags: ['Keynote', 'International', 'Strategy'],
       body: 'Delivered a keynote at an international yachting summit in Sanya, China. Shared insights drawn from work across China, the Middle East, and Europe, focusing on how Italian design values translate into international growth strategy for the yachting and luxury sectors.'
@@ -1906,7 +1947,9 @@
   const modalLink = document.getElementById('modal-link');
   const modalClose = document.getElementById('modal-close');
 
+  let projectTrigger = null;
   function openProject(idx) {
+    projectTrigger = document.activeElement;
     const p = projects[idx];
     modalImg.src = p.img;
     modalImg.alt = p.title;
@@ -1921,26 +1964,49 @@
     } else {
       modalLink.style.display = 'none';
     }
+    modal.inert = false;
+    modal.setAttribute('aria-hidden', 'false');
     modal.classList.add('open');
+    modalClose.focus();
     document.body.style.overflow = 'hidden';
   }
 
   function closeModal() {
     modal.classList.remove('open');
+    modal.setAttribute('aria-hidden', 'true');
+    modal.inert = true;
+    if (projectTrigger) projectTrigger.focus();
     document.body.style.overflow = '';
   }
 
   document.querySelectorAll('.proj-card').forEach(card => {
+    card.tabIndex = 0;
+    card.setAttribute('role', 'button');
+    card.setAttribute('aria-haspopup', 'dialog');
+    card.setAttribute('aria-label', 'View project: ' + card.querySelector('.proj-card-name').textContent);
     card.addEventListener('click', () => openProject(+card.dataset.proj));
+    card.addEventListener('keydown', e => {
+      if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openProject(+card.dataset.proj); }
+    });
   });
   modalClose.addEventListener('click', closeModal);
   modal.addEventListener('click', e => { if (e.target === modal) closeModal(); });
-  document.addEventListener('keydown', e => { if (e.key === 'Escape') closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (!modal.classList.contains('open')) return;
+    if (e.key === 'Escape') closeModal();
+    if (e.key === 'Tab') {
+      const focusable = [...modal.querySelectorAll('button, a[href]')].filter(el => el.offsetParent !== null);
+      const first = focusable[0], last = focusable[focusable.length - 1];
+      if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+      else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+    }
+  });
 
   /* ── SMOOTH SCROLL FOR NAV LINKS ────────────────────────── */
   document.querySelectorAll('a[href^="#"]').forEach(a => {
     a.addEventListener('click', e => {
-      const target = document.querySelector(a.getAttribute('href'));
+      const href = a.getAttribute('href');
+      const target = href === '#' ? document.getElementById('hero') : document.querySelector(href);
       if (target) {
         e.preventDefault();
         target.scrollIntoView({ behavior: 'smooth', block: 'start' });
